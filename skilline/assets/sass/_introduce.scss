@@ -1,0 +1,34 @@
+.introduce{
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 0 100px;
+
+
+    }
+    &__item{
+        position: relative;
+        img{
+           border: none;
+           width: 600px;
+        }
+
+    }
+    &__content{
+        position:absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    &__heading{
+        font-size: 3.2rem;
+        line-height: 1.5;
+        color:#fff;
+    }
+    &__student{
+        background-color: rgba(35, 189, 238, 0.9);
+    }
+}

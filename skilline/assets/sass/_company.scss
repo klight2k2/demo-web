@@ -1,0 +1,22 @@
+.companies{
+    margin-top: 75px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__heading{
+        font-size: 2.8rem;
+        line-height: 1.6;
+        color:$text-color;
+        font-weight: normal;
+        letter-spacing:2px;
+    }
+    &__list{
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:0 76px;
+    }
+}

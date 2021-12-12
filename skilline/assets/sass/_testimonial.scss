@@ -1,0 +1,81 @@
+.testimonial{
+    display:flex;
+    margin-top: 165px;
+    align-items: center;
+    justify-content: space-between;
+    &__heading{
+        max-width: 608px;
+    }
+    
+    &__title{
+        font-size:6rem;
+        line-height: 8.2rem;
+        margin: 32px 0 0 0;
+    }
+    &__img{
+        width: 1052px;
+        text-align: center;
+        position: relative;
+    }
+    &__review{
+        position:absolute;
+        bottom:0;
+        right: 0;
+        transform: translateY(30%);
+        width: 680px;
+        height:329px;
+        padding:41px 42px 29px 87px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow:2px 4px 60px rgba(41, 44, 124, 0.1);
+        border-left: 14px solid rgba(246, 119, 102, 1);
+    }
+}
+
+.review{
+    &__content{
+        margin:0;
+        width: 100%;
+        font-size: 2.2rem;
+        line-height: 1.8;
+        font-family: Nunito Sans;
+        font-style: normal;
+        color:#5F5F7E;
+        text-align: left;
+        position: relative;
+        &:before{
+            content:"";
+            position: absolute;
+            top:0;
+            left: -32px;
+            height: 100%;
+            width: 1px;
+            background-color: #BDBDD1;
+        }
+    }
+    &__rating{
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__author{
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 180%;
+        color: #5F5F7E;
+    }
+    &__star{
+        &-icon{
+            color:#FBA333;
+            font-size:2.4rem;
+            margin-bottom: 12px;
+        }
+        font-family: Nunito Sans;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 180%;
+        color: #80819A;
+    }
+}

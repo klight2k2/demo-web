@@ -1,0 +1,88 @@
+.footer{
+    margin-top: 160px;
+    background-color: #252641;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    &__heading{
+        margin-top: 74px;
+        color:#fff;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        display: flex;
+        gap: 0 82px;
+        position: relative;
+        &::after{
+            content:"";
+            height:100%;
+            width: 1px;
+            background-color: #626381;
+            top: 0;
+            left: 50%;
+            position: absolute;
+        }
+    }
+    &__title{
+        max-width: 156px;
+        margin: 0;
+    }
+   &__form{
+       margin-top: 103px;
+       display: flex;
+        flex-direction:column;
+        align-items: center;
+
+   }
+   &__btn{
+    background: linear-gradient(105.5deg, #545AE7 19.57%, #393FCF 78.85%);
+   }
+   &__links{
+       display: flex;
+        list-style: none;
+        padding-left:0;   
+        margin-top: 96px;    
+   }
+   &__link{
+       color:#B2B3CF;
+       text-decoration: none;
+       font-size: 2.2rem;
+       line-height: 1.5;
+       padding:0 20px;
+   }
+   &__item:not(:first-of-type){
+       border-left: 1px solid #626381;
+   }
+   &__copyright{
+    color:#B2B3CF;
+    text-decoration: none;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+   }
+}
+
+.form{
+
+    &__title{
+        font-size: 2.6rem;
+        line-height: 1.5;
+        font-weight: 500;
+        color:#B2B3CF;
+        margin-bottom: 20px;
+    }
+    &__email{
+        border: 1px solid #83839A;
+        outline:none;
+        border-radius: 80px;
+        font-size: 2rem;
+        line-height: 1.5;
+        padding:15px 30px;
+        min-width: 258px;
+        background-color: #252641;
+        color:$secondary-color;
+        margin-right: 20px;
+    }
+}

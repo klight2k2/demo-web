@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="">More <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li class="subnav-item"><a href="">Merchanise</a></li>
+                        <li class="subnav-item"><a href="">Extras</a></li>
+                        <li class="subnav-item"><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn"><i class="fa fa-search"></i></div>
+        </div>
+        <div class="slider">
+            <div class="slider-content">
+                <h2 class="slider-heading">New York</h2>
+                <p class="slider-desc">The atmosphere in New York is lorem ipsum</p>
+            </div>
+        </div>
+        <div class="theban" id="band">
+            <div class="container">
+                <div class="block">
+                    <h2 class="block-title">THE BAND</h2>
+                    <span class="block-subtitle">We love music</span>
+                    <div class="block-content">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+                <div class="theban-list">
+                    <div class="theban-list-person">
+                        <div class="theban-name">Name</div><img src="https://source.unsplash.com/random" alt="" class="theban-image">
+                        
+                    </div>
+                    <div class="theban-list-person">
+                        <div class="theban-name">Name</div>
+                        <img src="https://source.unsplash.com/random" alt="" class="theban-image">
+                    </div>
+                    <div class="theban-list-person">
+                        <div class="theban-name">Name</div>
+                        <img src="https://source.unsplash.com/random" alt="" class="theban-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tourdate" id="tour">
+            <div class="container">
+                <div class="block">
+                    <h2 class="block-title" style="color:white">TOUR DATES</h2>
+                    <span class="block-subtitle">Remember to book your tickets</span>
+                </div>
+                <ul class="tour-tickets">
+                    <li>September   <span class="sold-out">Sold out</span></li>
+                    <li>November   <span class="sold-out">Sold out</span></li>
+                    <li>Octember <span class="quantity">3</span></li>
+                </ul>
+                <div class="tour-places">
+                    <div class="tour-places-item">
+                        <img src="./newyork.jpg" alt="" class="places-image">
+                        <div class="places-content">
+                            <h3 class="places-item-heading">New York</h3>
+                            <div class="places-item-time">Fri 27 Nov 2016</div>
+                            <div class="places-item-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                            <button class="buy-ticket js-buy-ticket">Buy ticket</button>
+                        </div>
+                    </div>
+                    <div class="tour-places-item">
+                        <img src="./paris.jpg" alt="" class="places-image">
+                        <div class="places-content">
+                            <h3 class="places-item-heading">Paris</h3>
+                            <div class="places-item-time">Sat 28 Nov 2016</div>
+                            <div class="places-item-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                            <button class="buy-ticket js-buy-ticket">Buy ticket</button>
+                        </div>
+                    </div>
+                    <div class="tour-places-item">
+                        <img src="./sanfran.jpg" alt="" class="places-image">
+                        <div class="places-content">
+                            <h3 class="places-item-heading">San Francisco</h3>
+                            <div class="places-item-time">Sun 29 Nov 2016</div>
+                            <div class="places-item-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                            <button class="buy-ticket js-buy-ticket">Buy ticket</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal js-modal">
+                <div class="modal-container js-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="fa fa-times"></i>
+                        
+                    </div>
+                    <header class="modal-header">
+                        <i class="fa fa-suitcase modal-header-icon"> </i>
+                        Tickets
+                    </header>
+                    <div class="modal-body">
+                        <label for="ticket-quantity" class="modal-label">
+                            <i class="fa fa-shopping-cart"></i>
+                            Tickets, $15 person
+                        </label>
+                        <input type="text" id="ticket-quantity" class="modal-input" placeholder="How many?">
+                        <label for="ticket-email" class="modal-label">
+                            <i class="fa fa-user"></i>
+                            Send to
+                        </label>
+                        <input type="text" id="ticket-email" class="modal-input" placeholder="Enter email">
+                        <button class="modal-btn">
+                            PAY
+                            <i class="fa fa-check"></i>
+                        </button>
+                        <p class="modal-footer">
+                            Need <a href="#" class="text-blue">Help?</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <div class="contact" id="contact">
+                <div class="container">
+                    <div class="block">
+                        <h2 class="block-title" >CONTACT</h2>
+                        <span class="block-subtitle">Fan? Drop a note!</span>
+                    </div>
+                    <div class="contact-content">
+                        <div class="contact-content-item">
+                            <span class="item-desc">Chicago,US</span>
+                            <span class="item-desc">Phone:+00 151515</span>
+                            <span class="item-desc">Email:mail@mail.com</span>
+                        </div>
+                        <div class="contact-content-item ">
+                            <div class="contact-box">
+                                <input type="text" class="contact-name" placeholder="Name"></input>
+                                <input type="text" class="contact-email" placeholder="Email"></input>
+                                <input type="text" class="contact-message" placeholder="Message"></input>
+                            </div>
+                            <button class="contact-send">Send</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <img src="./map.jpg" alt="" class="map-image">
+        <div class="footer">
+            <div class="footer-icon">
+                <i class="fa fa-facebook-square footer-icon-hover"></i>
+                <i class="fa fa-instagram footer-icon-hover"></i>
+                <i class="fa fa-snapchat  footer-icon-hover"></i>
+                <i class="fa fa-pinterest-p  footer-icon-hover"></i>
+                <i class="fa fa-twitter  footer-icon-hover"></i>
+                <i class="fa fa-linkedin  footer-icon-hover"></i>
+            </div>
+            <div class="footer-desc">Powered by Klight</div>
+        </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+    </html>
+    

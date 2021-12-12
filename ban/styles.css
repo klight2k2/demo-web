@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+.header {
+  height: 46px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.nav > li > a {
+  text-transform: uppercase;
+  color: white;
+}
+.main{
+  overflow: hidden;
+}
+.nav {
+  display: inline-block;
+}
+.nav li {
+  display: inline-block;
+  position: relative;
+  line-height: 46px;
+  padding: 0 24px;
+}
+.nav li a {
+  text-decoration: none;
+}
+.nav li:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.nav li:hover a {
+  color: black;
+}
+
+.subnav {
+  display: none;
+  transform: translateX(-26px);
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.subnav-item {
+  display: block;
+  width: 130px;
+}
+.subnav-item a {
+  color: black;
+}
+
+.nav li:hover .subnav {
+  display: block;
+  cursor: pointer;
+}
+
+.search-btn {
+  float: right;
+  color: white;
+  font-size: 20px;
+  line-height: 46px;
+  padding: 0 21px;
+}
+
+.search-btn:hover {
+  background-color: #f44336 !important;
+  cursor: pointer;
+}
+
+.slider {
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("./chicago.jpg") top center no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+.slider-content {
+  position: absolute;
+  color: white;
+  bottom: 47px;
+  text-align: center;
+  width: 100%;
+}
+.slider-heading {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.slider p {
+  font-size: 24px;
+}
+
+.block {
+  text-align: center;
+}
+.block-title {
+  margin-top: 80px;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.block-subtitle {
+  display: block;
+  margin-bottom: 35px;
+  color: #ccc;
+  font-style: italic;
+  justify-content: center;
+}
+.block-content {
+  text-align: justify;
+}
+
+.theban-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  margin: 70px auto;
+}
+.theban-list-person {
+  margin: 0 auto;
+}
+.theban-image {
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+.theban-name {
+  text-align: center;
+}
+
+.tourdate {
+  background-color: #000;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  max-width: 780px;
+  margin: 50px auto;
+  padding-top: 20px;
+}
+
+.tour-tickets {
+  background-color: white;
+  color: #645c5c;
+  list-style: none;
+  font-size: 15px;
+}
+
+.tour-tickets li {
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tour-tickets .sold-out {
+  background: red;
+  color: white;
+  padding: 4px 8px;
+  margin-left: 16px;
+}
+
+.tour-tickets .quantity {
+  background: #000;
+  color: white;
+  float: right;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+.tour-places {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  padding-bottom: 30px;
+}
+.tour-places-item {
+  background: white;
+}
+.tour-places .places-image {
+  height: 184px;
+  width: auto;
+  object-fit: cover;
+}
+.tour-places .places-image:hover {
+  opacity: 0.6;
+}
+.tour-places .places-item-heading {
+  font-size: 16px;
+}
+.tour-places .places-item-time {
+  margin-top: 20px;
+  color: #ccc;
+}
+.tour-places .places-item-desc {
+  margin: 20px auto;
+  line-height: 1.4;
+}
+.tour-places .buy-ticket {
+  background: #000;
+  color: white;
+  font-size: 16px;
+  padding: 7px 10px;
+  border: none;
+}
+.tour-places .buy-ticket:hover {
+  background: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.places-content {
+  margin: 24px 16px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  display: none;
+}
+.modal-container {
+  background: #fff;
+  width: 800px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  position: relative;
+  animation: modalFadein ease 1s;
+}
+.modal-body {
+  padding: 16px 16px;
+}
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 12px;
+  opacity: 0.8;
+}
+.modal-close:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.modal-header {
+  background: #009688;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  color: white;
+}
+.modal-header-icon {
+  margin-right: 16px;
+}
+.modal-label {
+  display: block;
+  margin-bottom: 12px;
+}
+.modal-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  width: -webkit-fill-available;
+  margin-bottom: 24px;
+}
+.modal-btn {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  background-color: #009688;
+  color: #fff;
+  font-size: 20px;
+}
+.modal-btn:hover {
+  color: #000;
+  background-color: #ccc;
+}
+.modal-footer {
+  padding: 10px;
+  float: right;
+  margin-top: 18px;
+}
+.modal .text-blue {
+  color: #2196F3;
+}
+
+.modal.open {
+  display: flex;
+}
+
+@keyframes modalFadein {
+  from {
+    transform: translateY(-200px);
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact .item-desc {
+  display: block;
+}
+.contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+.contact-name {
+  width: -webkit-fill-available;
+  height: 20px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+}
+.contact-email {
+  width: -webkit-fill-available;
+  height: 20px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+}
+.contact-message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: -webkit-fill-available;
+  height: 20px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+}
+.contact-send {
+  margin-top: 20px;
+  float: right;
+  height: 40px;
+  width: 80px;
+  background: #000;
+  color: white;
+  border: none;
+}
+
+.map-image {
+  width: 100%;
+}
+
+.footer {
+  opacity: 0.8;
+  margin: 60px auto;
+  text-align: center;
+}
+.footer-icon {
+  padding: 10px;
+  font-size: 24px;
+}
+.footer-icon-hover:hover {
+  opacity: 0.6;
+}
+/* PC */
+@media (min-width:1024px){
+
+}
+
+/* Tablet */
+
+@media (min-width:740px) and (max-width:1023px){
+
+}
+
+/* Mobile */
+
+@media(max-width:)
+/*# sourceMappingURL=styles.css.map */

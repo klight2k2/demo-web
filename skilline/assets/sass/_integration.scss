@@ -1,0 +1,24 @@
+.integration{
+    margin-top: 183px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1460px;
+    gap:0 292px;
+    &__brand{
+        display:flex;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        max-width: 480px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: baseline;
+        gap:84px 91px;
+    }
+    img:nth-of-type(3){
+        transform: translateX(40%);
+    }
+    .integration__title{
+        max-width: 480px;
+    }
+}
